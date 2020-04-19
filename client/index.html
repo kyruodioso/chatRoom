@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChatRoom</title>
+</head>
+<body>
+    <div class="caja">
+        <h1>Chat Socket.io y NodeJS</h1>
+
+        <div id="messages">
+        </div>
+        <form onsubmit="return addMessage(this);">
+            <input id="nickname" type="text" placeholder="Nick" />
+            <textarea id="text" placeholder="Mensaje..."></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+  
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
